@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum<b class="bold" onmouseover="m()" onmouseleave="n()">hii</b> dolor sit amet consectetur<b class="bold" onmouseover="m()"  onmouseleave="n()">Hello</b> adipisicing elit. Dolores illo ipsa officiis numquam dicta<b class="bold" onmouseover="m()"  onmouseleave="n()">welcome</b> fugit, explicabo quo? Eos, atque rem numquam similique maxime repellat <b class="bold" onmouseover="m()"  onmouseleave="n()">BiggBoss</b>quaerat, est libero dolore culpa quod.</p>
+    <script>
+       function m(){
+        var hii=document.getElementsByClassName("bold");
+        for(let i=0; i < hii.length;i++){
+            hii[i].style.color="red";
+        }
+       }
+       function n(){
+            var hii=document.getElementsByClassName("bold");
+            for(let i=0;i< hii.length;i++){
+                hii[i].style.color="black";
+       }
+       }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(a){
+            var flag=0;
+            if(a==0 || a==1){
+                document.write(a + 'neither prime nor composite...')
+            }
+            for(var i=2;i<=a/2;++i){
+                if(a % i ==0){
+                    flag=1;
+                    break;
+                }
+            }
+            if(flag==0)
+                document.write(a + " is a prime number");
+            else
+                document.write(a + " is a non prime number");
+        }
+        var a=prompt("enter a number");
+        prime(parseInt(a));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

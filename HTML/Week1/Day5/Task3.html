@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.google.com" id="anchor" target="_blank" rel="extension" hreflang="UTF-8" type="text">CLick here to go google website</a><br />
+    <!-- href= specifies the URL of the page
+         target==specifies where to open the link
+           rel === specifies the relationship between the current document and linked document
+           hreflang= specifies the language of the linked document
+          type== specifies the media type of the linked document-->
+    <script>
+        var alink=document.getElementById("anchor");
+        document.write("The href is "+alink.href);
+        document.write("<br />")
+        document.write("The hreflang value is "+alink.hreflang);
+        document.write("<br />")
+        document.write("The relation is "+alink.rel);
+        document.write("<br />")
+        document.write("page will be displayed on " + alink.target);
+        document.write("<br />")
+        document.write("Page will contain " +alink.type);
+    </script>
+</body>
+</html>

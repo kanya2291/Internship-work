@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            text-align: center;
+            margin-left: 500px;
+        margin-top: 100px;
+            
+        }
+    </style>
+</head>
+<body id="boddy">
+    <button id="btn">click me</button>
+    <script>
+        var btnAction=document.getElementById("btn");
+        // btnAction.onclick=function(){
+        //     window.alert("button is clicked");
+        // }
+            var bodyColor=document.getElementById("boddy");
+        btnAction.addEventListener('click',function(){
+            //alert(Math.floor(Math.random()*255));
+            bodyColor.style.backgroundColor="rgb(" + Math.floor(Math.random()*255)+" ,"+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255)+")";
+            btnAction.style.fontSize="30px";
+        })
+    </script>
+</body>
+</html>

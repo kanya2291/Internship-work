@@ -1,0 +1,356 @@
+.nav{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: black;
+    width: 100%;
+    /* background-color: black; */
+}
+.nav-div{
+    position: fixed;
+    width: 100%;
+}
+.nav h4{
+    cursor: pointer;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    /* margin-top: 5px;
+    border: 2px solid black; */
+}
+.nav ul li{
+    cursor: pointer;
+}
+.searchButton{
+    width:50px;
+    /* border-left: 40px; */
+    margin-left: -50px;
+}
+.you-image{
+    width: 80px;
+    margin-top:-10px;
+}
+
+.inputt{
+    width:600px;
+    border-radius:100px;
+    margin-top: 8px;
+    padding: 10px;
+    height: 40px;
+    /* margin-right: -400px; */
+    margin-left: 5px;
+    padding-right: 20px;
+}
+.rounded-circle{
+    width:40px;
+    height: 40px;
+    margin-top: 8px;
+    margin-left: -400px;
+    position:relative;
+}
+.rounded-circle:hover{
+    background-color: rgb(210, 205, 205);
+}
+
+
+.sidebar_container{   
+    height: 90vh;
+    /* overflow-y: auto;    
+    overflow-x: hidden;  */
+    position: fixed;   
+}
+.sidebar_container:hover{
+    overflow-y: auto;
+    overflow-x: hiden;
+}
+.sidebar_container button{
+    display: block;
+    width: 200px;
+    margin-top: 2px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.sidebar_container button:hover{
+    background-color: rgb(224, 217, 217);
+    cursor: pointer;
+}
+
+.maindivv{
+    display: flex;
+    margin-left: 220px;
+    flex-direction: column;
+    margin-top: 60px;
+    flex:1;
+    /* background-color: black; */
+}
+.maindivv .buttons{
+    margin-left: 35px;
+}
+.youtube{
+    display: flex;
+}
+
+.sidebar_content{
+    display: flex;
+    flex:0.1;    
+    margin-top:70px;
+    /* padding: 20px; */
+    /* align-items: center; */
+    /* background-color:blue; */
+  }
+
+  .horizontal{
+    width: 200px;
+  }
+
+
+.images img{
+    width: 350px;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+.images{
+    display: flex;
+    /* margin:0px; */
+    flex-wrap: wrap;
+}
+.images > .cardd{
+    margin-right: 0px;
+    margin:10px;
+}
+.buttons{
+    margin-top: 15px;
+    /* position: fixed; */
+    margin-left: 15px;
+    /* overflow:auto; */
+    /* z-index: -1; */
+    /* top:0; */
+    /* overflow-x:scroll; */
+    /* height: 50px; */
+    min-width: 1000px;
+    /* display: flex; */
+}
+.buttons .btn{
+    font-size: 14px;
+    background-color:rgb(205, 201, 201);
+    margin-right: 5px;   
+}
+.buttons button:hover{
+     background-color: rgb(156, 153, 153); 
+     cursor: pointer; 
+    /* box-shadow: 20px 20px 20px 20px; */
+}
+
+.cardd{
+    height: 300px;
+    width: 350px;
+    gap: 50px;
+    /* border-radius: 50px; */
+    /* border: 2px solid grey;  */
+}
+.card-body{
+    cursor: pointer;
+    /* border: 2px solid grey; */
+}
+.cardd-image{
+    width: 300px;
+    margin-top: 0px;
+    border-radius: 20px;
+    height: 200px;
+    /* border: 2px solid red; */
+    /* border-radius: 10px 20px 10px 10px; */
+}
+.cardd-image:hover{
+    border-radius: 0px;
+}
+
+.nav-menu{
+    width: 10%;
+    height: 90vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    left:-100%;
+    transition: transform 350ms;
+    margin-top: 70px;
+    /* z-index: 1; */
+}
+.nav-menu.active{
+    left:0;
+    transition: translateX(0);
+    flex: 1;
+}
+.content{
+    margin-left: 12%;
+    transition: margin-left 350ms;
+    margin-top: 60px;
+}
+.content.collapsed{
+    margin-left: 90px;
+}
+.collapseDiv{
+    background-color: black;
+    display: block;
+    width: 12%;
+    display: none;
+    
+}
+.collapse-divCon{
+    padding: 2px;
+}
+.collapse-divCon button{
+    width: 70px;
+    border-radius: 20px;
+    height: 70px;
+    background-color: white;
+    border: none;
+}
+.collapse-divCon button:hover{
+    background-color: rgb(238, 233, 233);
+}
+.collapse-divCon button h6{
+    font-size: 11px;
+}
+.newContent.active{
+    left:0;
+    transition: translateX(0);
+    flex: 1;
+}
+.newContent{
+    width: 5%;
+    height: 90vh;
+    display: block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    transition: transform 350ms;
+    margin-top: 70px; 
+    /* background-color: aquamarine; */
+}
+/* @media screen and (min-width:1200px){
+    .inputt{
+        width:500px;
+        margin-left: 30px;
+    }
+    .rounded-circle{
+        margin-left: -200px;
+    }
+}
+@media screen and (min-width:768px){
+    .inputt{
+        width:200px;
+        margin-left: -200px;
+    }
+}
+@media screen and(min-width:600px){
+    .inputt{
+        width:200px;
+        margin-left: -100px;
+    }
+} */
+@media screen and (max-width:450px){
+    .inputt{
+        margin-left: -20px;
+        width:200px;
+        height: 30px;
+        margin-top: 5px;
+
+    }
+    .rounded-circle{
+        margin-left:-px;
+        width: 30px;
+        height: 30px;
+    }
+    .nav ul{
+        gap:4px
+    }
+    .yimage{
+        margin-left: 13px;
+    }
+    .images > .cardd{
+        margin-right: 0px;
+        margin:30px;
+    }
+    .images img{
+        width: 400px;
+        margin-top: 10px;
+        margin-right: 10px;
+    
+    }
+
+    /* .maindivv{
+        justify-content: center;
+    } */
+    /* .images{
+        justify-content: center;
+    } */
+}
+@media screen and (max-width:450px){
+    .sidebar_container{
+        display: none;
+    }
+    .inputt{
+        width: 400px;
+        margin-left: -300px;
+        margin-top: 18px;
+    }
+    .rounded-circle{
+        margin-top: 20px;
+        margin-right:-250px;
+    }
+    .nav ul{
+        gap:25px;
+        margin-top: 10px;
+    } 
+    .images > .cardd{
+        margin-right: 0px;
+        margin:40px;
+    }
+    .images img{
+        width: 400px;
+        margin-top: 10px;
+        margin-right: 10px;
+    
+    }
+    
+}
+@media screen and (max-width:800px){
+    .sidebar_container{
+        display: none;
+    }
+    .inputt{
+        width: 400px;
+        margin-left: -300px;
+    }
+    .rounded-circle{
+        margin-right: -180px;
+    }
+    .nav ul{
+        gap: 25px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:1400px){
+    .sidebar_container{
+        display: none;
+    }
+    .inputt{
+        width:400px;
+        margin-left: -300px;
+    }
+    .rounded-circle{
+        margin-right: -180px;
+    }
+    .nav ul{
+        gap:25px;
+    }
+
+}

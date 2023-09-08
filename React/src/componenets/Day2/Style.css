@@ -1,0 +1,14 @@
+.heading{
+    color: white;
+    /* background-color: black; */
+    text-align: center;
+}
+.para{
+    text-align: center;
+    font-size: 30px;
+}
+.button{
+    margin-left: 47%;
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function date(){
+            // document.write(Date());
+            const date=new Date();
+            console.log(date)
+            console.log(date.getDate());//1-31
+            console.log(date.getDay());//0-6
+            console.log(date.getFullYear());
+            console.log(date.getHours());//0-23
+            console.log(date.getMonth());//0-11
+            console.log(date.getMinutes());//0-59
+            console.log(date.getSeconds());//0-59
+            console.log(date.getMilliseconds());//0-999
+            console.log(date.getTime());//returns milliseconds since jan 1 1970
+            console.log(date.getUTCDate());
+            console.log(date.getUTCDay());
+            console.log(date.getUTCFullYear());
+            console.log(date.getUTCSeconds());
+            console.log(date.getUTCMonth());
+            console.log(date.getUTCMilliseconds());
+            console.log(date.getUTCHours());
+
+            
+            let ms=Date.now();
+            document.write(ms);//returns milliseconds since jan 1 1970
+            console.log(date.toISOString());
+
+        }
+        date();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

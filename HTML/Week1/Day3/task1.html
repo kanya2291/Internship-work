@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum_three(a,b,c){
+            document.write("addition = "+(a+b+c));
+            document.write("  subtraction="+(c-b-a));
+            document.write("   multiplication="+(1*b*c));
+            document.write("   division="+(a/b));
+            document.write("   modulus = "+(a%b));
+            document.write("   Increment= "+(++a));
+            document.write("   decrement = "+(--b));
+            document.write("   Post Incremnt = "+(a++));
+            document.write("   Post decremnt = "+(c--));
+
+        }
+        var num1=prompt("enter first number");
+        var num2=prompt("enter second number");
+        var num3=prompt("enter third number");
+        var result=sum_three(parseInt(num1),parseInt(num2),parseInt(num3));
+        // document.write("the total sum is "+result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

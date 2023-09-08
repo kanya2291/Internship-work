@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 100%;
+            padding: 8px 16px;
+            margin-bottom: 16px;
+            font-size: 24px;
+            outline: none;
+            margin-top: 10px;
+        }
+        #username-err{
+            color: red;;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-top: 0px;
+            margin-bottom: 24px;
+            display: none;
+        }
+        #form-login{
+            width: 400px;
+            margin-left: 550px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <form action="" id="form-login">
+        <input type="text" id="username" placeholder="Username" name="username" required / >
+        <p id="username-err">Please enter a valid username</p>
+        <input type="password" id="password" placeholder="Password" name="username" required / >
+        <input type="submit" name="submit" value="login" id="btn-submit">
+
+    </form>
+</header>
+<script src="formReg.js"></script>
+</body>
+</html>
