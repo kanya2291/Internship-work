@@ -1,2 +1,2 @@
 # React-work
-Two months Work on React JS
+Two months Work at Internship
